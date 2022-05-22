@@ -1260,7 +1260,7 @@ html.disable-scrolling {
 @media (min-width: 1280px) {
     .page-footer__logo {
         /*width:260px*/
-        width: 23;
+        /*width: 23;*/
     }
 }
 

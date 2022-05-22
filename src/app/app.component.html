@@ -2,7 +2,12 @@
 <div  [ngClass]="{'home page-template page-template-front-page page-template-front-page-php page page-id-5': _butler.route === 'one', 'page-template page-template-template-about page-template-template-about-php page page-id-7 is-first': _butler.route === 'two','page-template page-template-template-services page-template-template-services-php page page-id-11 is-second': _butler.route === 'three'  }" data-barba="wrapper"
  [ngStyle]="{'background-color': _butler.backBlack ? 'black' : 'white'}"
 >  
-    
+      <span class="cursor">
+    <img src="assets/assetssimp/assets/img/cursor-white.png" alt=""[hidden]="!_butler.one">
+    <img src="assets/assetssimp/assets/img/cursor-blue.png" alt=""[hidden]="!_butler.two">
+    <img src="assets/assetssimp/assets/img/cursor-green.png" alt=""[hidden]="!_butler.three">
+    <img src="assets/assetssimp/assets/img/cursor-purple.png" alt=""[hidden]="!_butler.four">
+</span>
     <div class="is-mobile"></div>
       
     <div class="main-wrap">

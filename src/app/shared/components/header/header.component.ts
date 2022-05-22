@@ -30,7 +30,11 @@ export class HeaderComponent implements AfterViewInit {
     navigation: false
   };  
     public  goRoute(r:string){
-    if(r==="one"){  this.router.navigate(['/home']); this._butler.route="one";this._butler.backBlack=true;}
+    if(r==="one"){  this.router.navigate(['/home']); this._butler.route="one";this._butler.backBlack=true;
+this._butler.one=true;
+this._butler.two=false;
+this._butler.three=false;
+  }
  
   }
 

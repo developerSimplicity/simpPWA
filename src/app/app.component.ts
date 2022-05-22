@@ -18,9 +18,20 @@ export class AppComponent implements OnInit {
     public _butler:Butler
   ){}
   public  goRoute(r:string){
-    if(r==="one"){  this.router.navigate(['/home']); this._butler.route="one";this._butler.backBlack=true;}
-    if(r==="two"){  this.router.navigate(['/asisomos']);this._butler.route="two";this._butler.backBlack=false;}
-    if(r==="three"){  this.router.navigate(['/estohacemos']);this._butler.route="three";this._butler.backBlack=false;}
+    if(r==="one"){  this.router.navigate(['/home']); this._butler.route="one";this._butler.backBlack=true;
+this._butler.one=true;
+this._butler.two=false;
+this._butler.three=false;
+  }
+    if(r==="two"){  this.router.navigate(['/asisomos']);this._butler.route="two";this._butler.backBlack=false;
+  this._butler.one=false;
+this._butler.two=true;
+this._butler.three=false;}
+    if(r==="three"){  this.router.navigate(['/estohacemos']);this._butler.route="three";this._butler.backBlack=false;
+this._butler.one=false;
+this._butler.two=false;
+this._butler.three=true;
+  }
   }
 
   ngOnInit(): void {

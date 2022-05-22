@@ -22,6 +22,10 @@ export class Butler {
     details:boolean=false;
     profile:boolean=true;
     rides:boolean=false;
+    four:boolean=false;
+    five:boolean=false;
+    six:boolean=false;
+    seven:boolean=false;
     orderSelected:any={};
     bikerStatus:boolean=true;
     type:string="Passenger"; 

@@ -1,6 +1,6 @@
 <footer class="page-footer"  style="z-index: 999;">
     <div class="page-footer__inner container">
-        <a class="page-footer__logo" href="" style="    height: 100%;">
+        <a class="page-footer__logo" href="" style="    height: 100%;" [ngStyle]="{'width': _butler.one ? '259px' : _butler.two ? '220px' : _butler.three ? '176px': _butler.four ? '130px': _butler.five ? '87px': _butler.six ? '43px': null  }">
            <img src="assets/assetssimp/assets/img/logofooter.jpeg">
         </a>
         <div class="page-footer__form">
