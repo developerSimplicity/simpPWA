@@ -27,6 +27,14 @@
               "src/assets",
               "src/manifest.webmanifest"
             ],
+            "optimization": {
+              "scripts": true,
+              "styles": {
+                "minify": true,
+                "inlineCritical": false
+              },
+              "fonts": true
+            },
             "styles": [
               "src/styles.css",
               "src/assets/assets/vendor/swiperjs-6.6.2/swiper-bundle.min.css"
