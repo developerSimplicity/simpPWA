@@ -1,5 +1,8 @@
-import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, AfterViewInit, ViewChild, ElementRef ,OnDestroy, ViewEncapsulation, Inject, Injectable} from '@angular/core';
 import { ScriptService } from '@app/services/script.service';
+
+import { DOCUMENT } from '@angular/common';
+import { Title } from '@angular/platform-browser';
 
 import { ScriptStore } from '@app/services/script.store';
 
@@ -988,17 +991,22 @@ declare var $: any;
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css',],
+    encapsulation: ViewEncapsulation.None,
 })
 
-export class HomeComponent implements AfterViewInit {
+@Injectable()
+export class HomeComponent implements AfterViewInit, OnDestroy {
 
   private debounceTimer?:NodeJS.Timeout;
 @ViewChild('mapDiv')mapDivElement!:ElementRef
 @ViewChild('mysearch')myserachElement!:ElementRef
 
 link:string=""; 
+
   constructor(
+   @Inject(DOCUMENT) 
+   private document: Document,
     private bikersService:BikersService,
 
     public script:ScriptService,
@@ -1068,6 +1076,7 @@ total=0;
 
   ngAfterViewInit(): void {
 
+this._butler.route="one";
     this.script.load(
 'regenerator',
 'wp-polyfill',
@@ -1085,9 +1094,17 @@ total=0;
  
     }, 1000);
 
-  
+     this.document.body.classList.add('bodybg-color');
 
   }
+
+
+  ngOnDestroy() {
+    // remove the class form body tag
+    this.document.body.classList.add('bodybg-color');
+  }
+
+
 precioDolar= 5;
 currency = "USD";
   products = PRODUCTS;

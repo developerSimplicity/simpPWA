@@ -1,88 +1,32 @@
- <footer class="footer">
-        <div class="container">
-
-            <ul class="nav nav-pills nav-justified"  [hidden]="_butler.two || _butler.three">
-                <li class="nav-item">
-                    <a class="nav-link active"  (click)="go(1)" [routerLink]="['home']">
-                        <span>
-                            <i class="nav-icon bi bi-grid"></i>
-                            <span class="nav-text">Home</span>
-                        </span>
-                    </a>
-                </li>
-                <li class="nav-item center-item">
-                    <a class="nav-link" (click)="go(2)" [routerLink]="['cart']" >
-                        <span>
-                            <i class="nav-icon bi bi-cart"></i>
-                            <span class="nav-text">Cart</span>
-                            <span class="countercart" [hidden]="_butler.totalItems===0">{{_butler.totalItems}}</span>
-                        </span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" (click)="go(3)" [routerLink]="['categories']" >
-                        <span>
-                            <i class="nav-icon bi bi-layers"></i>
-                            <span class="nav-text">Categorias</span>
-                        </span>
-                    </a>
-                </li>
-            </ul>
-
-            <ul class="nav nav-pills nav-justified"  [hidden]="_butler.one || _butler.three">
-                <li class="nav-item">
-                    <a class="nav-link " (click)="go(1)"[routerLink]="['home']" >
-                        <span>
-                            <i class="nav-icon bi bi-grid"></i>
-                            <span class="nav-text">Home</span>
-                        </span>
-                    </a>
-                </li>
-                <li class="nav-item center-item">
-                    <a class="nav-link active"  (click)="go(2)" [routerLink]="['cart']">
-                        <span>
-                            <i class="nav-icon bi bi-cart"></i>
-                            <span class="nav-text">Cart</span>
-                            <span class="countercart" [hidden]="_butler.totalItems===0">{{_butler.totalItems}}</span>
-                        </span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"  (click)="go(3)" [routerLink]="['categories']">
-                        <span>
-                            <i class="nav-icon bi bi-layers"></i>
-                            <span class="nav-text">Categorias</span>
-                        </span>
-                    </a>
-                </li>
-            </ul>
-
-            <ul class="nav nav-pills nav-justified"  [hidden]="_butler.two || _butler.one">
-                <li class="nav-item">
-                    <a class="nav-link "  (click)="go(1)" [routerLink]="['home']">
-                        <span>
-                            <i class="nav-icon bi bi-grid"></i>
-                            <span class="nav-text">Home</span>
-                        </span>
-                    </a>
-                </li>
-                <li class="nav-item center-item">
-                    <a class="nav-link" (click)="go(2)"[routerLink]="['cart']" >
-                        <span>
-                            <i class="nav-icon bi bi-cart"></i>
-                            <span class="nav-text">Cart</span>
-                            <span class="countercart" [hidden]="_butler.totalItems===0">{{_butler.totalItems}}</span>
-                        </span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active"   (click)="go(3)" [routerLink]="['categories']" >
-                        <span>
-                            <i class="nav-icon bi bi-layers"></i>
-                            <span class="nav-text">Categorias</span>
-                        </span>
-                    </a>
-                </li>
-            </ul>
+<footer class="page-footer">
+    <div class="page-footer__inner container">
+        <a class="page-footer__logo" href="" style="    height: 100%;">
+           <img src="assets/assetssimp/assets/img/logofooter.jpeg">
+        </a>
+        <div class="page-footer__form">
+            <p><strong>Chile: </strong></p>
+             <p>Presidente Errázuriz 2999, piso4<br>
+                    los Condes, Santiago de Chile.
+           
         </div>
-    </footer>
+        <div class="page-footer__form">
+             <p><strong>Estados Unidos:</strong></p>
+             <p>
+                 1395 Brickell Avenue, Suite 800<br> Miami, FL 33131, USA.
+             </p>
+            
+        </div>  
+       
+        <ul class="page-footer__social">
+                <li><img src="assets/assetssimp/assets/img/colores.png" title="colores">
+
+                </li>
+        </ul>
+        <ul class="page-footer__social">
+                <li><a href="https://cl.linkedin.com/company/agenciasimplicity" target="_blank" rel="noreferrer noopener"><img src="assets/assetssimp/assets/img/linkedin.png" title="linkedin"></a>
+
+                </li>
+        </ul>
+    </div>
+    
+</footer>

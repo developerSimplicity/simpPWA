@@ -9,3 +9,6 @@
   .pointer{
     cursor: pointer;
   }
+  .bodybg-color {
+    background-color: black;
+}

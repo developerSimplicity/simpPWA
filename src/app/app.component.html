@@ -1,4 +1,33 @@
 
-  <!-- <app-header></app-header> -->
-  <router-outlet></router-outlet>
-  <!-- <app-footer></app-footer> -->
+<div  [ngClass]="{'home page-template page-template-front-page page-template-front-page-php page page-id-5': _butler.route === 'one', 'page-template page-template-template-about page-template-template-about-php page page-id-7 is-first': _butler.route === 'two','page-template page-template-template-services page-template-template-services-php page page-id-11 is-second': _butler.route === 'three'  }" data-barba="wrapper"
+ [ngStyle]="{'background-color': _butler.backBlack ? 'black' : 'white'}"
+>  
+    
+    <div class="is-mobile"></div>
+      
+    <div class="main-wrap">
+        
+        <ul class="nav">
+         
+            <li (click)="goRoute('two')"><a  data-class="is-first">Así Somos</a>
+            </li>
+            <li (click)="goRoute('three')" ><a data-class="is-second">Esto Hacemos</a>
+            </li>
+            <li><a data-class="is-third">Nos Eligen</a>
+            </li>
+            <li><a  data-class="is-fourth">Así Respondemos</a>
+            </li>
+             <li><a data-class="is-fifth">Tu Equipo</a>
+            </li>
+            <li><a data-class="is-sixth" style="color: #000;">Aqui Estamos</a>
+            </li>
+        </ul>
+        <!-- <app-header ></app-header> -->
+
+      <router-outlet></router-outlet>
+      </div>
+
+
+
+      <app-footer></app-footer>
+</div>

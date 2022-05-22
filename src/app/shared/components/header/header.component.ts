@@ -29,6 +29,11 @@ export class HeaderComponent implements AfterViewInit {
     spaceBetween: 5,
     navigation: false
   };  
+    public  goRoute(r:string){
+    if(r==="one"){  this.router.navigate(['/home']); this._butler.route="one";this._butler.backBlack=true;}
+ 
+  }
+
   public details(b:any){
     let a =b;
     if (a==1){this.link="assets/assets/img/user4.jpg";}

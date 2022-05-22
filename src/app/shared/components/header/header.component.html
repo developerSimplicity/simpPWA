@@ -1,20 +1,58 @@
- <header class="container-fluid header">
-            <div class="row mb-3">
-              <!--   <div class="col-auto align-self-center">
-                    <button type="button" class="btn btn-link menu-btn text-color-theme">
-                        <i class="bi bi-list size-24"></i>
-                    </button>
-                </div> -->
-                <div class="col text-center">
-                    <div class="logo-small">
-                        <img src="https://www.simplicity.com/assets/assetssuper/images/logo.png" alt="" class="img">
-                       
-                    </div>
-                </div>
-                <div class="col-auto align-self-center" [hidden]="_butler.total===0">
-                    <a class="link text-dark" *ngIf="_butler.total!==undefined">
-                       {{currency}} {{_butler.total | number:'1.2-2' }}
-                    </a>
-                </div>
+<header class="page-header container" >
+    <div class="page-header__inner">
+        <div class="page-header__logo-wrap show-in-mob no-transition-menu-item">
+            <a class="page-header__logo page-header__logo--front"(click)="goRoute('one')" [hidden]="_butler.route!=='one'">
+                <img src="assets/assetssimp/assets/img/logowhite.png" alt="Simplicity">
+            </a>
+             <a class="page-header__logo page-header__logo--front"(click)="goRoute('one')" [hidden]="_butler.route==='one'">
+                <img src="assets/assetssimp/assets/img/logoblack.png" alt="Simplicity">
+            </a>
+
+        </div>
+        <button class="hamburger"><span class="visually-hidden">Menu</span></button>
+        <div class="page-header__logo-wrap hide-in-mob col-lg-12 col-md-12" >
+            <div class="col-md-6 col-lg-6"  [hidden]="!_butler.backBlack">
+                <a class="page-header__logo  page-header__logo--front"(click)="goRoute('one')" >
+                    <img src="assets/assetssimp/assets/img/logowhite.png" alt="Simplicity">
+                </a>
             </div>
-        </header>
+            <div class="col-md-6 col-lg-6"  [hidden]="_butler.backBlack">
+                <a class="page-header__logo  page-header__logo--front"(click)="goRoute('one')" >
+                    <img src="assets/assetssimp/assets/img/logoblack.png" alt="Simplicity">
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-6"  [hidden]="!_butler.backBlack">
+                <a class="btn1 page-header__logo  page-header__logo--front" href="index.html" data-class="is-first" style="color: #fff;">es </a>
+
+                <a class="btn1 page-header__logo  page-header__logo--front" href="" data-class="is-first" style="color: #fff;">| en  </a>
+                <a class="btn1 page-header__logo  page-header__logo--front" href="" data-class="is-first" style="color: #fff; border: 2px solid #fff;"> Estados Unidos</a>
+            </div>
+             <div class="col-md-6 col-lg-6" [hidden]="_butler.backBlack">
+                <a class="btn1 page-header__logo  page-header__logo--front" href="index.html" data-class="is-first" style="color: #000;">es </a>
+
+                <a class="btn1 page-header__logo  page-header__logo--front" href="" data-class="is-first" style="color: #000;">| en  </a>
+                <a class="btn1 page-header__logo  page-header__logo--front" href="" data-class="is-first" style="color: #000; border: 2px solid #000;"> Estados Unidos</a>
+            </div>
+        </div> 
+    
+
+        <nav class="page-header__nav">
+            <ul id="menu-header-menu" class="page-header__menu">
+                <li  class=""><a href="asisomos.html">Así somos</a>
+                </li>
+                <li  class=""><a href="estohacemos.html">Esto Somos</a>      
+                </li>
+                <li  class=""><a href="noseligen.html">Nos Eligen</a>
+                </li>
+                <li  class=""><a href="asirespondemos.html">Así Respondemos</a>
+                </li>
+                <li  class=""><a href="tuequipo.html">Tu Equipo</a>
+                </li>
+                <li  class=""><a href="aquiestamos.html" style="color: #000;">Aqui Estamos</a>
+                </li>
+                
+            </ul>        
+        </nav>
+        
+    </div>
+</header>
