@@ -1,0 +1,20 @@
+ <header class="container-fluid header">
+            <div class="row mb-3">
+              <!--   <div class="col-auto align-self-center">
+                    <button type="button" class="btn btn-link menu-btn text-color-theme">
+                        <i class="bi bi-list size-24"></i>
+                    </button>
+                </div> -->
+                <div class="col text-center">
+                    <div class="logo-small">
+                        <img src="https://www.simplicity.com/assets/assetssuper/images/logo.png" alt="" class="img">
+                       
+                    </div>
+                </div>
+                <div class="col-auto align-self-center" [hidden]="_butler.total===0">
+                    <a class="link text-dark" *ngIf="_butler.total!==undefined">
+                       {{currency}} {{_butler.total | number:'1.2-2' }}
+                    </a>
+                </div>
+            </div>
+        </header>
