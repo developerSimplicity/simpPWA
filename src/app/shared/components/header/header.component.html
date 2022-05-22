@@ -1,4 +1,4 @@
-<header class="page-header container" >
+<header class="page-header container"  [ngStyle]="{'background-color': _butler.backBlack ? 'black' : 'white'}">
     <div class="page-header__inner">
         <div class="page-header__logo-wrap show-in-mob no-transition-menu-item">
             <a class="page-header__logo page-header__logo--front"(click)="goRoute('one')" [hidden]="_butler.route!=='one'">
@@ -10,7 +10,7 @@
 
         </div>
         <button class="hamburger"><span class="visually-hidden">Menu</span></button>
-        <div class="page-header__logo-wrap hide-in-mob col-lg-12 col-md-12"  [ngStyle]="{'background-color': _butler.backBlack ? 'black' : 'white'}">
+        <div class="page-header__logo-wrap hide-in-mob col-lg-12 col-md-12" >
             <div class="col-md-6 col-lg-6"  [hidden]="!_butler.backBlack">
                 <a class="page-header__logo  page-header__logo--front"(click)="goRoute('one')" >
                     <img src="assets/assetssimp/assets/img/logowhite.png" alt="Simplicity">
