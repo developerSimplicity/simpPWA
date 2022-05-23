@@ -1,5 +1,5 @@
 
-<div  [ngClass]="{'home page-template page-template-front-page page-template-front-page-php page page-id-5': _butler.route === 'one', 'page-template page-template-template-about page-template-template-about-php page page-id-7 is-first': _butler.route === 'two','page-template page-template-template-services page-template-template-services-php page page-id-11 is-second': _butler.route === 'three'  }" data-barba="wrapper"
+<div  [ngClass]="{'home page-template page-template-front-page page-template-front-page-php page page-id-5': _butler.route === 'one', 'page-template page-template-template-about page-template-template-about-php page page-id-7 is-first': _butler.route === 'two','page-template page-template-template-services page-template-template-services-php page page-id-11 is-second': _butler.route === 'three','page-template page-template-template-about page-template-template-services-php page page-id-11 is-third': _butler.route === 'four'  }" data-barba="wrapper"
  [ngStyle]="{'background-color': _butler.backBlack ? 'black' : 'white'}"
 >  
       <span class="cursor">
@@ -18,7 +18,7 @@
             </li>
             <li (click)="goRoute('three')" ><a data-class="is-second">Esto Hacemos</a>
             </li>
-            <li><a data-class="is-third">Nos Eligen</a>
+            <li  (click)="goRoute('four')"> <a data-class="is-third">Nos Eligen</a>
             </li>
             <li><a  data-class="is-fourth">Así Respondemos</a>
             </li>

@@ -316,7 +316,8 @@ body {
     }
 
     .is-third .main-wrap {
-        padding-left: 132px;
+        /*padding-left: 132px;*/
+        padding-left: 44px;
         padding-right: 44px
     }
 
@@ -336,7 +337,8 @@ body {
 
 .main-inner {
     position: relative;
-    width: 80%;
+    width: 100%;
+    /*width: 80%;*/
     overflow: hidden
 }
 
@@ -599,7 +601,7 @@ p:last-of-type {
 
 @media (min-width: 1280px) {
     .container {
-        padding-left:65px;
+        /*padding-left:65px;*/
         padding-right: 65px;
     }
     .container1 {
@@ -1658,7 +1660,8 @@ html.disable-scrolling {
 
 .about-inner {
     max-width: 1033px;
-    margin-left: auto;
+    margin-left: 0%;
+    /*margin-left: auto;*/
     margin-right: auto
 }
 

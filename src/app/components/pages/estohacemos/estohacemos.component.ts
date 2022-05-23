@@ -1,19 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, AfterViewInit,Inject,Injectable } from '@angular/core';
 import {Butler} from '@app/services/butler.service';
+import { DOCUMENT } from '@angular/common';
 @Component({
   selector: 'app-estohacemos',
   templateUrl: './estohacemos.component.html',
   styleUrls: ['./estohacemos.component.css']
 })
-export class EstohacemosComponent implements OnInit {
+@Injectable()
+export class EstohacemosComponent implements AfterViewInit  {
 
   constructor(
+           @Inject(DOCUMENT) 
+   private document: Document,
     public _butler: Butler
 
     ) { }
 
-  ngOnInit(): void {
+  ngAfterViewInit (): void {
+     this.document.body.classList.remove('bodybg-color');
  this._butler.route="three";
+       this.document.body.classList.add('bodybg-color3');
   }
 
 }

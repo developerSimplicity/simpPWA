@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { EstohacemosRoutingModule } from './estohacemos-routing.module';
-import { EstohacemosComponent } from './estohacemos.component';
+import { NoseligenRoutingModule } from './noseligen-routing.module';
+import { NoseligenComponent } from './noseligen.component';
 import { HeaderModule } from '@shared/components/header/header.module';
 
 @NgModule({
   declarations: [
-    EstohacemosComponent
+    NoseligenComponent
   ],
   imports: [
 HeaderModule,
     CommonModule,
-    EstohacemosRoutingModule
+    NoseligenRoutingModule
   ]
 })
-export class EstohacemosModule { }
+export class NoseligenModule { }

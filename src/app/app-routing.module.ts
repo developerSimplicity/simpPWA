@@ -12,6 +12,7 @@ const routes: Routes = [
 { path: 'order', loadChildren: () => import('./components/pages/order/order.module').then(m => m.OrderModule) },
 { path: 'asisomos', loadChildren: () => import('./components/pages/asisomos/asisomos.module').then(m => m.AsisomosModule) },
 { path: 'estohacemos', loadChildren: () => import('./components/pages/estohacemos/estohacemos.module').then(m => m.EstohacemosModule) },
+{ path: 'noseligen', loadChildren: () => import('./components/pages/noseligen/noseligen.module').then(m => m.NoseligenModule) },
  { path:'**',pathMatch:'full',redirectTo:'home'}
 ];
 

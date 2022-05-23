@@ -34,6 +34,7 @@ export class HeaderComponent implements AfterViewInit {
 this._butler.one=true;
 this._butler.two=false;
 this._butler.three=false;
+this._butler.four=false;
   }
  
   }
