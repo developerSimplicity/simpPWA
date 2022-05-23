@@ -537,7 +537,7 @@ body {
 }
 
 .h1,.h2,.h3,h1,h2,h3 {
-    font-size: 5rem;
+    font-size: 9.5rem;
     line-height: .8
 }
 
@@ -593,6 +593,9 @@ p:last-of-type {
 }
 
 @media (min-width: 768px) {
+    .gasparin{
+        display: none;
+    }
     .container {
         padding-left:40px;
         padding-right: 40px
@@ -608,6 +611,7 @@ p:last-of-type {
         padding-left: 35px;
         padding-right: 107px;
     }
+
 
 }
     
@@ -1197,6 +1201,9 @@ html.disable-scrolling {
 @media (min-width: 768px) {
     .page-footer {
         font-size:1.5rem
+    }
+     .gasparin {
+        display: none;
     }
 }
 
@@ -2847,8 +2854,10 @@ body.error404 .main-wrap {
 
 @media (min-width: 1024px) {
     .about-hello {
-        padding-top: 25%;
-        padding-bottom: 20%;
+        padding-top: 16%;
+        /*padding-top: 25%;*/
+        padding-bottom: 16%;
+        /*padding-bottom: 20%;*/
 
     }
 }
@@ -2858,7 +2867,8 @@ body.error404 .main-wrap {
 }
 
 .about-hello__title h1 {
-    max-width: 337px
+    max-width: 100%
+    /*max-width: 337px*/
 }
 
 .about-hello__copy {

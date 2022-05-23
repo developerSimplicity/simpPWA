@@ -1,0 +1,26 @@
+@media screen and (min-width: 1024px)
+{
+  div#personas{
+    max-width: 40%;
+  }
+ div#portada{
+    padding-top: 15%;
+    padding-bottom: 45%;
+  }
+
+}
+@media screen and (max-width: 1024px)
+{
+   div#portada{
+    padding-top: 15%;
+    padding-bottom: 45%;
+  }
+
+  div#personas{
+    max-width: 80%;
+  }
+  h1{
+    font-size: 5rem;
+    width: 90%;
+  }
+}

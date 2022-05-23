@@ -1,3 +1,23 @@
   .bodybg-color2 {
     background-color: white;
 }
+@media screen and (min-width: 1024px)
+{
+  div#pensamos{
+    max-width: 45%;
+  }
+}
+@media screen and (max-width: 1024px)
+{
+   div#contenido{
+    padding-top: 25%;
+  }
+
+  div#pensamos{
+    max-width: 80%;
+  }
+  h1{
+    font-size: 5rem;
+    width: 90%;
+  }
+}

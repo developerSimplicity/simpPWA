@@ -1,23 +1,23 @@
-<header class="page-header container"  [ngStyle]="{'background-color': _butler.backBlack ? 'black' : 'white'}" [ngStyle]="{'padding-left':  _butler.two ? '10%' : _butler.three ? '15%': _butler.four ? '20%': _butler.five ? '20%': _butler.six ? '20%': null  }">
-    <div class="page-header__inner">
+<header class="page-header container"  [ngStyle]="{'background-color': _butler.backBlack ? 'black' : 'white'}" [ngStyle]="{'padding-left':  _butler.one ? '17%' :_butler.two ? '16%' : _butler.three ? '17%': _butler.four ? '20%': _butler.five ? '20%': _butler.six ? '20%': null  }">
+    <div class="page-header__inner" >
         <div class="page-header__logo-wrap show-in-mob no-transition-menu-item">
             <a class="page-header__logo page-header__logo--front"(click)="goRoute('one')" [hidden]="_butler.route!=='one'">
                 <img src="assets/assetssimp/assets/img/logowhite.png" alt="Simplicity">
             </a>
-             <a class="page-header__logo page-header__logo--front"(click)="goRoute('one')" [hidden]="_butler.route==='one'">
+ <!--             <a class="page-header__logo page-header__logo--front hide-in-mob"(click)="goRoute('one')" [hidden]="_butler.route==='one'">
                 <img src="assets/assetssimp/assets/img/logoblack.png" alt="Simplicity">
-            </a>
+            </a> -->
 
         </div>
         <button class="hamburger"><span class="visually-hidden">Menu</span></button>
-        <div class="page-header__logo-wrap hide-in-mob col-lg-12 col-md-12" >
+        <div class="page-header__logo-wrap hide-in-mob col-lg-12 col-md-12"  >
             <div class="col-md-6 col-lg-6"  [hidden]="!_butler.backBlack">
                 <a class="page-header__logo  page-header__logo--front"(click)="goRoute('one')" >
                     <img src="assets/assetssimp/assets/img/logowhite.png" alt="Simplicity">
                 </a>
             </div>
             <div class="col-md-6 col-lg-6"  [hidden]="_butler.backBlack">
-                <a class="page-header__logo  page-header__logo--front"(click)="goRoute('one')" >
+                <a class="page-header__logo  page-header__logo--front hide-in-mob"(click)="goRoute('one')" >
                     <img src="assets/assetssimp/assets/img/logoblack.png" alt="Simplicity">
                 </a>
             </div>
@@ -38,17 +38,17 @@
 
         <nav class="page-header__nav">
             <ul id="menu-header-menu" class="page-header__menu">
-                <li  class=""><a href="asisomos.html">Así somos</a>
+                <li  (click)="goRoute('two')"><a >Así somos</a>
                 </li>
-                <li  class=""><a href="estohacemos.html">Esto Somos</a>      
+                <li  (click)="goRoute('three')"><a >Esto Somos</a>      
                 </li>
-                <li  class=""><a href="noseligen.html">Nos Eligen</a>
+                <li  (click)="goRoute('four')"><a >Nos Eligen</a>
                 </li>
-                <li  class=""><a href="asirespondemos.html">Así Respondemos</a>
+                <li  class=""><a >Así Respondemos</a>
                 </li>
-                <li  class=""><a href="tuequipo.html">Tu Equipo</a>
+                <li  class=""><a >Tu Equipo</a>
                 </li>
-                <li  class=""><a href="aquiestamos.html" style="color: #000;">Aqui Estamos</a>
+                <li  class=""><a  style="color: #000;">Aqui Estamos</a>
                 </li>
                 
             </ul>        

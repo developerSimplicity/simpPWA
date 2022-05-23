@@ -29,6 +29,16 @@ export class HeaderComponent implements AfterViewInit {
     spaceBetween: 5,
     navigation: false
   };  
+//     public  goRoute(r:string){
+//     if(r==="one"){  this.router.navigate(['/home']); this._butler.route="one";this._butler.backBlack=true;
+// this._butler.one=true;
+// this._butler.two=false;
+// this._butler.three=false;
+// this._butler.four=false;
+//   }
+ 
+//   }
+
     public  goRoute(r:string){
     if(r==="one"){  this.router.navigate(['/home']); this._butler.route="one";this._butler.backBlack=true;
 this._butler.one=true;
@@ -36,7 +46,23 @@ this._butler.two=false;
 this._butler.three=false;
 this._butler.four=false;
   }
- 
+    if(r==="two"){  this.router.navigate(['/asisomos']);this._butler.route="two";this._butler.backBlack=false;
+  this._butler.one=false;
+this._butler.two=true;
+this._butler.four=false;
+this._butler.three=false;}
+    if(r==="three"){  this.router.navigate(['/estohacemos']);this._butler.route="three";this._butler.backBlack=false;
+this._butler.one=false;
+this._butler.two=false;
+this._butler.three=true;
+this._butler.four=false;
+  }
+    if(r==="four"){  this.router.navigate(['/noseligen']);this._butler.route="four";this._butler.backBlack=false;
+this._butler.one=false;
+this._butler.two=false;
+this._butler.three=false;
+this._butler.four=true;
+  }
   }
 
   public details(b:any){
