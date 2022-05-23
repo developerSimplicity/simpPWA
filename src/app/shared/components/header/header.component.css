@@ -1,0 +1,10 @@
+  @media screen and (max-width: 1024px)
+{
+  div#cabeza{
+   background-color: black;
+  }
+.page-header{
+  background-color: black;
+}
+
+}
