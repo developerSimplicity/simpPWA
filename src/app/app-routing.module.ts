@@ -13,6 +13,7 @@ const routes: Routes = [
 { path: 'asisomos', loadChildren: () => import('./components/pages/asisomos/asisomos.module').then(m => m.AsisomosModule) },
 { path: 'estohacemos', loadChildren: () => import('./components/pages/estohacemos/estohacemos.module').then(m => m.EstohacemosModule) },
 { path: 'noseligen', loadChildren: () => import('./components/pages/noseligen/noseligen.module').then(m => m.NoseligenModule) },
+{ path: 'projects', loadChildren: () => import('./components/pages/projects/projects.module').then(m => m.ProjectsModule) },
  { path:'**',pathMatch:'full',redirectTo:'home'}
 ];
 
