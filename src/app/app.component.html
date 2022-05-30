@@ -1,5 +1,13 @@
 
-<div  [ngClass]="{'home page-template page-template-front-page page-template-front-page-php page page-id-5': _butler.route === 'one', 'page-template page-template-template-about page-template-template-about-php page page-id-7 is-first': _butler.route === 'two','page-template page-template-template-services page-template-template-services-php page page-id-11 is-second': _butler.route === 'three','page-template page-template-template-about page-template-template-services-php page page-id-11 is-third': _butler.route === 'four' ,'page-template page-template-template-services page-template-template-services-php page page-id-1 is-fourth': _butler.route === 'five'  }" data-barba="wrapper"
+<div  [ngClass]="{
+    'home page-template page-template-front-page page-template-front-page-php page page-id-5': _butler.route === 'one', 
+    'page-template page-template-template-about page-template-template-about-php page page-id-7 is-first': _butler.route === 'two',
+    'page-template page-template-template-services page-template-template-services-php page page-id-11 is-second': _butler.route === 'three',
+    'page-template page-template-template-works page-template-template-works-php page page-id-11 is-third': _butler.route === 'four' ,
+    'page-template page-template-template-jobs page-template-template-jobs-php page page-id-1 is-fourth': _butler.route === 'five' ,
+    'page-template page-template-template-jobs page-template-template-jobs-php page page-id-11 is-fiveth': _butler.route === 'six',
+    'page-template page-template-template-contact page-template-template-contact-php page page-id-11 is-sixth ': _butler.route === 'seven' 
+     }" data-barba="wrapper"
  [ngStyle]="{'background-color': _butler.backBlack ? 'black' : 'white'}"
 >  
       <span class="cursor">
@@ -7,6 +15,9 @@
     <img src="assets/assetssimp/assets/img/cursor-blue.png" alt=""[hidden]="!_butler.two">
     <img src="assets/assetssimp/assets/img/cursor-green.png" alt=""[hidden]="!_butler.three">
     <img src="assets/assetssimp/assets/img/cursor-purple.png" alt=""[hidden]="!_butler.four">
+    <img src="assets/assetssimp/assets/img/cursor-red.png" alt=""[hidden]="!_butler.five">
+    <img src="assets/assetssimp/assets/img/cursor-yellow.png" alt=""[hidden]="!_butler.six">
+    <img src="assets/assetssimp/assets/img/cursor-black.png" alt=""[hidden]="!_butler.seven">
 </span>
     <div class="is-mobile"></div>
       
@@ -20,11 +31,11 @@
             </li>
             <li  (click)="goRoute('four')"> <a data-class="is-third">Nos Eligen</a>
             </li>
-            <li><a  data-class="is-fourth">Así Respondemos</a>
+            <li (click)="goRoute('five')"><a   >Así Respondemos</a>
             </li>
-             <li><a data-class="is-fifth">Tu Equipo</a>
+             <li (click)="goRoute('six')"><a  >Tu Equipo</a>
             </li>
-            <li><a data-class="is-sixth" style="color: #000;">Aqui Estamos</a>
+            <li (click)="goRoute('seven')"><a  style="color: #000;">Aqui Estamos</a>
             </li>
         </ul>
         <!-- <app-header ></app-header> -->

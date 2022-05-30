@@ -46,27 +46,35 @@ this._butler.two=false;
 this._butler.three=false;
 this._butler.five=false;
 this._butler.four=false;
+this._butler.six=false;
+this._butler.seven=false;
   }
     if(r==="two"){  this.router.navigate(['/asisomos']);this._butler.route="two";this._butler.backBlack=false;
   this._butler.one=false;
 this._butler.two=true;
 this._butler.four=false;
+this._butler.three=false;
 this._butler.five=false;
-this._butler.three=false;}
+this._butler.six=false;
+this._butler.seven=false;
+}
     if(r==="three"){  this.router.navigate(['/estohacemos']);this._butler.route="three";this._butler.backBlack=false;
 this._butler.one=false;
 this._butler.two=false;
 this._butler.three=true;
-this._butler.five=false;
 this._butler.four=false;
-
+this._butler.five=false;
+this._butler.six=false;
+this._butler.seven=false;
   }
     if(r==="four"){  this.router.navigate(['/noseligen']);this._butler.route="four";this._butler.backBlack=false;
 this._butler.one=false;
 this._butler.two=false;
 this._butler.three=false;
-this._butler.five=false;
 this._butler.four=true;
+this._butler.five=false;
+this._butler.six=false;
+this._butler.seven=false;
   }
     if(r==="five"){  this.router.navigate(['/projects']);this._butler.route="five";this._butler.backBlack=false;
 this._butler.one=false;
@@ -74,6 +82,26 @@ this._butler.two=false;
 this._butler.three=false;
 this._butler.four=false;
 this._butler.five=true;
+this._butler.six=false;
+this._butler.seven=false;
+  }  
+    if(r==="six"){  this.router.navigate(['/team']);this._butler.route="six";this._butler.backBlack=false;
+this._butler.one=false;
+this._butler.two=false;
+this._butler.three=false;
+this._butler.four=false;
+this._butler.five=false;
+this._butler.six=true;
+this._butler.seven=false;
+  }
+    if(r==="seven"){  this.router.navigate(['/contact']);this._butler.route="seven";this._butler.backBlack=false;
+this._butler.one=false;
+this._butler.two=false;
+this._butler.three=false;
+this._butler.four=false;
+this._butler.five=false;
+this._butler.six=false;
+this._butler.seven=true;
   }
   }
 

@@ -2,14 +2,12 @@ import { Component, AfterViewInit,Inject,Injectable,OnDestroy  } from '@angular/
 import {Butler} from '@app/services/butler.service';
 import { DOCUMENT } from '@angular/common';
 @Component({
-  selector: 'app-projects',
-  templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.css']
+  selector: 'app-team',
+  templateUrl: './team.component.html',
+  styleUrls: ['./team.component.css']
 })
 @Injectable()
-
-
-export class ProjectsComponent implements AfterViewInit , OnDestroy  {
+export class TeamComponent implements AfterViewInit , OnDestroy {
 
   constructor(
       @Inject(DOCUMENT) 
@@ -18,9 +16,9 @@ export class ProjectsComponent implements AfterViewInit , OnDestroy  {
 
     ) { }
 
-  ngAfterViewInit(): void {
+ngAfterViewInit(): void {
      this.document.body.classList.remove('bodybg-color');
-    this._butler.route="five";
+    this._butler.route="six";
        this.document.body.classList.add('bodybg-color2');
   }
 ngOnDestroy() {

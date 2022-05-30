@@ -321,15 +321,15 @@ body {
     }
 
     .is-fourth .main-wrap {
-        padding-left: 176px;
+        padding-left: 206px;
         padding-right: 0
     }
     .is-fiveth .main-wrap {
-        padding-left: 176px;
+        padding-left: 300px;
         padding-right: 0
     }
-    .is-fsixth .main-wrap {
-        padding-left: 176px;
+    .is-sixth .main-wrap {
+        padding-left: 370px;
         padding-right: 0
     }
 }
@@ -2494,6 +2494,26 @@ body.error404 .main-wrap {
     -webkit-transform: none;
     transform: none;
     left: 132px
+}
+
+.nav.is-ios li:nth-child(5) {
+    left: 182px
+}
+
+.is-fiveth .nav.is-ios li:nth-child(5) {
+    -webkit-transform: none;
+    transform: none;
+    left: 182px
+}
+
+.nav.is-ios li:nth-child(6) {
+    left: 200px
+}
+
+.is-sixth .nav.is-ios li:nth-child(6) {
+    -webkit-transform: none;
+    transform: none;
+    left: 200px
 }
 
 .hamburger {

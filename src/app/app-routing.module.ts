@@ -14,6 +14,8 @@ const routes: Routes = [
 { path: 'estohacemos', loadChildren: () => import('./components/pages/estohacemos/estohacemos.module').then(m => m.EstohacemosModule) },
 { path: 'noseligen', loadChildren: () => import('./components/pages/noseligen/noseligen.module').then(m => m.NoseligenModule) },
 { path: 'projects', loadChildren: () => import('./components/pages/projects/projects.module').then(m => m.ProjectsModule) },
+{ path: 'team', loadChildren: () => import('./components/pages/team/team.module').then(m => m.TeamModule) },
+{ path: 'contact', loadChildren: () => import('./components/pages/contact/contact.module').then(m => m.ContactModule) },
  { path:'**',pathMatch:'full',redirectTo:'home'}
 ];
 

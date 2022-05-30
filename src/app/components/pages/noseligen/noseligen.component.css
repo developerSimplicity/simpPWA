@@ -1,11 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @media screen and (min-width: 1024px)
 {
   div#personas{
     max-width: 40%;
   }
  div#portada{
+    padding-top: 22%;
+    padding-bottom: 5%;
+  }
+.is-third .main-wrap {
+    padding-left: 84px;
+    padding-right: 84px;
+  }
+.flecha{
+ padding-top: 12%;;
+}
+div#bono{
+    padding-top: 22%;
+    padding-bottom: 5%;
+  }
+.bono{
+ 
+  font-size: 50px;   
+  text-align: center;
+}
+.btn2{
+    color: #fff; 
+    background-color:#a03dff;
+    padding: 33px 33px 33px 33px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 50px;
+    font-weight: 500;
+    font-size: 2.2rem;
+    line-height: 1;
+    white-space: nowrap;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+  }
+  .layoutArea1{
+        padding-top: 10%;
+  }
+  .about-inner__row2{
+    justify-content: center;    
     padding-top: 15%;
-    padding-bottom: 45%;
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: justify;
+    margin-bottom: 100px;
+    font-weight: 400;
+    font-size: 72px;;
+  }
+
+  .home-copy__btn-wrap{
+    padding-top: 80px; padding-left: 40px;
+  }
+  .about-inner__col--sm {
+      width: calc(35% + 40px);
+      max-width: calc(35% + 40px);
+  }
+  
+  .home-copy__btn-wrap1{
+    padding-top: 10%
   }
 
 }
@@ -24,3 +87,4 @@
     width: 90%;
   }
 }
+
